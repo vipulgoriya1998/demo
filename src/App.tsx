@@ -1,5 +1,5 @@
-import Index from "./pages/Patient";
+import PatientTable from "./pages/Patient";
 
-const App = () => (<Index />)
+const App = () => <PatientTable />;
 
 export default App;

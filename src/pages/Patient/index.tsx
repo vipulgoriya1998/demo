@@ -1,10 +1,9 @@
 import { useMemo, useState } from "react";
-import { MantineColor, TextInput } from "@mantine/core";
+import { TextInput } from "@mantine/core";
 import {
   gridAdherenceColumn,
   gridCheckboxColumn,
   gridNameColumn,
-  getRomValue,
   gridTableColumns,
   gridRomColumn,
 } from "../../utils";

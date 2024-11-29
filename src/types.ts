@@ -3,8 +3,6 @@ export enum SortColumn {
   START_DATE = "START_DATE",
   END_DATE = "END_DATE",
   PROCEDURE = "PROCEDURE",
-  SURGEON = "SURGEON",
-  PROVIDER = "PROVIDER",
   ADHERENCE = "ADHERENCE",
   ROM = "ROM",
 }
