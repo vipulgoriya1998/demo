@@ -1,0 +1,58 @@
+.gridjs-th {
+  background: #f7f7f7 !important;
+  border: none !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+}
+
+.gridjs-th .gridjs-th-content {
+  width: auto !important;
+}
+
+
+.gridjs-td {
+  height: 40px;
+  font-size: 15px !important;
+  line-height: 24px;
+  border-bottom: 1px solid #dee2e6;
+  color: #161717 !important;
+  font-weight: 500 !important;
+}
+
+.gridjs-tr:hover td {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.gridjs-wrapper {
+  background: #ffffff;
+  border: 1px solid #e4e6eb;
+  border-bottom: none;
+  border-radius: 16px 16px 0 0 !important;
+  box-shadow: none !important;
+}
+
+.gridjs-tr {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.gridjs-tr:last-child {
+  border-bottom: none !important;
+}
+
+.gridjs-td {
+  border: none !important;
+  padding: 8px 24px !important;
+  background-color: white;
+}
+
+.gridjs-footer {
+  background: #f7f7f7 !important;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 0 0 16px 16px !important;
+  padding: 10px 12px !important;
+  box-shadow: none !important;
+}
+
+.gridjs-table {
+  width: 100%;
+}

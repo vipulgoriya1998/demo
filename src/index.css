@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "HKGrotesk";
+  src: url(./assets/fonts/HKGrotesk-Regular.otf) format("opentype");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  src: url(./assets/fonts/HKGrotesk-Medium.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  src: url(./assets/fonts/HKGrotesk-SemiBold.otf) format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-style: normal;
+  src: url(./assets/fonts/HKGrotesk-Bold.otf) format("opentype");
+  font-weight: 900;
+}
+
+* {
+  font-family: "HKGrotesk", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
