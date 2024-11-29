@@ -62,6 +62,7 @@ const PatientTable = () => {
     let sortingData = patientList;
     if (column === SortColumn.NAME) {
       sortingData = sortingData.sort((a: IPatient, b: IPatient) =>
+        // Compares two patient names alphabetically, taking locale into account.
         sort === SortColumnPosition.UP
           ? a.name?.localeCompare(b.name)
           : b.name?.localeCompare(a.name),
@@ -80,6 +81,7 @@ const PatientTable = () => {
 
     if (column === SortColumn.END_DATE) {
       sortingData = sortingData.sort((a: IPatient, b: IPatient) => {
+        // Parse the completion date
         const completionDateA = Date.parse(
           a?.currentProtocol?.completionDate as string,
         );
@@ -98,6 +100,7 @@ const PatientTable = () => {
           ?.surgeryProcedure as string;
         const surgeryProcedureB = b?.currentProtocol
           ?.surgeryProcedure as string;
+        // Compares two surgery procedure strings alphabetically, taking locale into account.
         return sort === SortColumnPosition.UP
           ? surgeryProcedureA?.localeCompare(surgeryProcedureB)
           : surgeryProcedureB?.localeCompare(surgeryProcedureA);

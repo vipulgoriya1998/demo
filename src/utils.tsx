@@ -42,6 +42,7 @@ const handleSortingColumn = (
   sortOrder: SortOrder,
   handleSortingFilter: (val: SortOrder) => void,
 ) => {
+  // Determine the new sort position (UP or DOWN) based on the current sort order
   const sortPosition =
     sortOrder.sort === SortColumnPosition.UP &&
     sortOrder.sort &&
@@ -59,6 +60,7 @@ const handleSortingColumn = (
   });
 };
 
+// Function to format a given date string into a more readable format
 const formatDate = (date: string, includeTime = false) => {
   const now = new Date(date);
   const months = [
@@ -79,6 +81,7 @@ const formatDate = (date: string, includeTime = false) => {
   const month = months[now.getMonth()];
   const day = String(now.getDate()).padStart(2, "0");
 
+  // If time should be included in the formatted date
   if (includeTime) {
     let hours = now.getHours();
     const minutes = String(now.getMinutes()).padStart(2, "0");
@@ -166,6 +169,7 @@ export const gridRomColumn = (ele: IPatient) => {
   );
 };
 
+// This function returns an array of columns for a grid table, allowing sorting and custom formatting for each column.
 export const gridTableColumns = (
   sortOrder: SortOrder,
   setSortOrder: (val: SortOrder) => void,
